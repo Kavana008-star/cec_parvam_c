@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class point 
+{
+    private:
+    const int x;
+    const int y;
+    public:
+    point(int xval,int yval):x(xval),y(yval)
+    {
+        cout<<"point created at ("<<x<<","<<y<<")"<<endl;
+    }
+    void display()
+    {
+        cout<<"point: ("<<x<<","<<y<<")"<<endl;
+    }
+};
+int main()
+{
+    point p1(2,3);
+    point p2(5,7);
+    p1.display();
+    p2.display();
+    return 0;
+}
